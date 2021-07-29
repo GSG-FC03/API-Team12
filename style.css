@@ -1,0 +1,40 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    flex-direction:column;
+    flex-wrap:wrap;
+}
+
+.header{
+    width:100%;
+    height: 50px;
+    background-color:black;
+    display: flex;
+    align-items: center;
+  
+}
+
+h1{
+    margin:20px;
+    color: white;
+}
+a{
+    text-decoration: none;
+}
+
+#form{
+     display: flex;
+    align-items:center;
+} 
+.search{
+    border-radius: 20px;
+    width: 170px;
+    height: 30px;
+    text-indent: 20px;
+    border: 1px solid black;
+    outline: none;
+}
