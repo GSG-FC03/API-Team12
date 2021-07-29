@@ -25,4 +25,19 @@ fetch(url).then(res => res.json())
 })
 .catch((err) => console.log(err));
 }
+//serch film 
+const SEARCHAPI =
+    "https://api.themoviedb.org/3/search/movie?&api_key=04c35731a5ee918f014970082a0088b1&query=";
+form.addEventListener("submit", (e) => {
+    e.preventDefault();
+    main.innerHTML = '';
+     
+    const searchTerm = search.value;
+ /* Adding the value wriiten in the search bar to the search Api,
+    in order to get the movies we search for. */
+    if (searchTerm) {
+        showMovies(SEARCHAPI + searchTerm);
+        search.value = "";
+    }
+});
 
